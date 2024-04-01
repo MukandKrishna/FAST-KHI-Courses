@@ -1,0 +1,30 @@
+Mistakes Made by iGate Management in Terminating Mr. Murthy:
+
+iGate's management may have made several mistakes in terminating Mr. Murthy:
+Lack of Transparent Communication: iGate terminated Murthy without apparent prior communication about the issue at hand, which Murthy claimed took him by surprise.
+Inconsistent Application of Company Policies: The company stated that Murthy was terminated for failing to report a relationship with a subordinate, which violated company policy. However, Murthy argued that he did report the relationship after it ended.
+Public Handling of Termination: The manner in which iGate handled the termination led to a drop in share price and negative publicity, which suggests they could have managed the situation in a more discreet and respectful manner.
+Contractual Considerations: iGate might have failed to consider the full implications of Murthy's employment contract and the amendments made to it, which included severance payments and long-term health insurance premiums, before deciding to terminate him​1​.
+Grounds for Mr. Murthy's Legal Action Against iGate:
+
+Mr. Murthy could go to court on the following grounds:
+Breach of Employment Agreement: Murthy claimed that his termination was unjustified and that iGate did not honor the terms of his employment contract.
+Defamation: He accused iGate of defaming him by justifying his termination publicly.
+Withholding of Entitlements: Murthy argued that iGate improperly withheld his vested stocks and other benefits, contrary to the employment agreement​1​.
+Service Level Agreement (SLA) Points for SlowFastians SFs and MK Private:
+A. Three Points for SF:
+
+Quality Assurance: SF should insist on clauses that allow for a reasonable time frame to correct any quality issues reported by MK Private.
+Intellectual Property Protection: Ensure that any UI/UX designs remain their intellectual property, even though they are developed for MK Private.
+Limitation of Liability: Include a limitation of liability clause to protect SF from disproportionate compensation claims.
+B. Three Points for MK Private:
+
+Service Delivery Commitments: MK Private would want SF to commit to specific delivery timelines for UI/UX designs and prototypes.
+Performance Metrics: Insist on the inclusion of performance KPIs and regular reporting to monitor and ensure quality service.
+Right to Audit: MK Private might require the right to audit SF's processes to ensure compliance with agreed standards.
+C. Point Initially Included by MK and Amended by SF:
+
+MK Private could have initially included a clause for full ownership of any created IP. SF might amend this to retain the IP of the developed UI/UX designs but grant MK Private a license for its use. This conflict arises from SF's need to reuse and leverage their designs across different clients without compromising MK Private's need for unique and proprietary designs.
+D. Similar Point for MK Private Based on Ensighten Case:
+
+MK Private could insist on a data security clause, similar to Ensighten's concern, ensuring that all prototypes and designs shared with SF are secured and any breach of confidentiality is met with specific repercussions, such as penalties or the right to terminate the SLA​2​.

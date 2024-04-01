@@ -1,0 +1,61 @@
+Answer 1:
+In cryptography, DES (Data Encryption Standard) and AES (Advanced Encryption Standard) are two well-known symmetric encryption algorithms that use a series of substitution and permutation steps to encrypt data. Here is how each implements substitution operations:
+
+DES (Data Encryption Standard):
+
+S-boxes (Substitution boxes): DES utilizes a set of 8 S-boxes during the encryption process. During the Feistel function, a 48-bit key is XORed with the 48-bit expanded data block. Then, this 48-bit block is divided into eight 6-bit blocks, each of which is fed into one of the eight S-boxes. Each S-box maps a 6-bit input to a 4-bit output, effectively substituting the input bits with new values according to a predetermined table.
+AES (Advanced Encryption Standard):
+
+SubBytes Step: In the AES encryption process, the SubBytes step is the first step of each round, where each byte of the block (state) is replaced with another byte according to a substitution table called the Rijndael S-box. This S-box is designed to be resistant to known cryptographic attacks, and it helps in introducing non-linearity to the encryption process.
+
+
+
+Answer 2:
+Confusion and Diffusion:
+
+Confusion: This property seeks to make the relationship between the plaintext and the ciphertext as complex as possible, often by substituting input bits with other values according to a certain rule or table. In DES, confusion is primarily achieved through the use of S-boxes in the substitution step, where bits are replaced based on a predefined table.
+
+Diffusion: Diffusion aims to spread the influence of individual plaintext bits over the entire ciphertext, so that a change in one bit of the plaintext should change about half of the bits in the ciphertext. In DES, diffusion is achieved through permutation steps and the Feistel structure, where bits are rearranged and spread out across the data block.
+
+Implementation in DES:
+
+Confusion: Implemented mainly through the S-boxes, where bits are replaced according to predefined substitution tables during the encryption rounds.
+Diffusion: Achieved through various permutation steps and the use of Feistel structure which distributes the influence of individual bits over the entire block through several rounds of processing.
+
+
+ANSWER 4:
+
+One scenario where encryption may not be required but integrity and authentication are critical is in the case of publicly available information on a website or a public database.
+
+Scenario:
+Imagine a public library website that offers a catalog of books available for borrowing. The catalog contains information about the titles, authors, publication dates, and availability of books. This information is publicly accessible to anyone visiting the website, and there's no need to keep it confidential through encryption.
+
+However, in this scenario, maintaining data integrity and ensuring authentication are crucial:
+
+Data Integrity: It's essential to ensure that the information on the website hasn't been tampered with or altered by malicious actors. Users should trust that the book details they see on the website are accurate and haven't been modified in transit or by an attacker. Ensuring data integrity prevents unauthorized changes to the catalog.
+
+Authentication: Users should be confident that they are interacting with the legitimate library website and not a malicious imposter. Authentication mechanisms, such as SSL/TLS certificates and secure domain verification, can help users confirm the website's authenticity.
+
+For this scenario, encryption may not be necessary because the information is intended to be publicly accessible. Instead, the focus should be on maintaining data integrity and authenticating the website.
+
+Illustration of Data Transformation:
+
+In this case, the transformation of a 128-bit data (such as a book entry in the catalog) primarily involves ensuring data integrity and authentication:
+
+Data Integrity: To ensure data integrity, a cryptographic hash function can be applied to the 128-bit data. The result is a fixed-size hash value (e.g., a 256-bit hash) that represents the data's unique fingerprint. This hash value is then securely transmitted alongside the data on the website.
+
+Authentication: To authenticate the website, it can obtain an SSL/TLS certificate from a trusted certificate authority (CA). When users access the website, their browsers will verify the authenticity of the SSL/TLS certificate. If the certificate is valid and matches the website's domain, users can trust that they are communicating with the legitimate site.
+
+
+
+answer these question ..
+
+1. how DES and AES implement subsititiuon operation 
+
+2. define confusion and diffusion . How they are implemented in DES? 
+
+Explain a scenario where encryption is not required but integrity and authentication is critical 
+
+b) Illustration how a 128bit data is transformed in this case.
+
+

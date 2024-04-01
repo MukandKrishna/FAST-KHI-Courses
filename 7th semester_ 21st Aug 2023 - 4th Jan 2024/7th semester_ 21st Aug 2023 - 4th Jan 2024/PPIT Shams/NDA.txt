@@ -1,0 +1,135 @@
+NDA template to the context where "Daraz.pk" is considering using "Careem's" services for delivery. 
+refer to Daraz.pk as the "Disclosing Party" and Careem as the "Receiving Party".
+
+---
+
+# Non-Disclosure Agreement (NDA)
+
+This Non-Disclosure Agreement (the "Agreement") is made effective as of [Date], by and between Daraz.pk, with a principal place of business at [Daraz.pk Address] ("Disclosing Party"), and Careem, with a principal place of business at [Careem Address] ("Receiving Party").
+
+## Purpose
+The Disclosing Party intends to disclose certain confidential and proprietary information to the Receiving Party for the purpose of evaluating and establishing a delivery service partnership.
+
+## Definition of Confidential Information
+"Confidential Information" includes but is not limited to:
+- Customer lists and profiles
+- Delivery and logistics data
+- Operational procedures
+- Software interfaces and specifications
+- Pricing structures and financial information
+- Market research and strategic plans
+
+Confidential Information shall not include information that is publicly available, already in the Receiving Party's possession, independently developed by the Receiving Party, or rightfully obtained from third parties.
+
+## Obligations of Confidentiality
+The Receiving Party shall:
+- Use the Confidential Information solely for evaluating the potential business engagement with the Disclosing Party.
+- Maintain the confidentiality of the information with the same degree of care that it uses for its own confidential information.
+- Restrict disclosure to employees and agents as is reasonably required and ensure they are bound by similar confidentiality obligations.
+
+## Non-Disclosure and Non-Use
+The Receiving Party agrees not to use any Confidential Information for any purpose outside the scope of the Agreement, nor to disclose, publish, or disseminate it to any third party without the prior written consent of the Disclosing Party.
+
+## Term
+The obligations of this Agreement shall commence on the Effective Date and continue for a period of three (3) years, unless terminated earlier by either Party.
+
+## Return or Destruction of Confidential Information
+Upon termination of this Agreement or upon the Disclosing Party's request, the Receiving Party shall promptly return or destroy all copies of the Confidential Information.
+
+## No Rights Granted
+This Agreement does not grant any rights in the Confidential Information or any patents or other intellectual property protections to the Receiving Party.
+
+## Non-Solicitation
+For two (2) years post-termination of this Agreement, neither Party shall directly or indirectly solicit or hire any personnel of the other Party without prior written consent.
+
+## Governing Law
+This Agreement shall be governed by and construed under the laws of [Applicable Jurisdiction, e.g., the Islamic Republic of Pakistan], without regard to its conflict of law principles.
+
+## Dispute Resolution
+Any disputes arising under this Agreement shall first be resolved through mutual negotiation. If unresolved, disputes shall be settled under the rules of [Specified Arbitration Association] in [Specified Location].
+
+## General Provisions
+- This Agreement constitutes the entire understanding between the Parties.
+- Amendments must be in writing and signed by both Parties.
+- If any provision is found unenforceable, the remainder will remain in effect.
+- Notices must be in writing and will be considered given upon receipt.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+**Daraz.pk**
+By: ___________________________
+Name: ___________________________
+Title: ___________________________
+Date: ___________________________
+
+**Careem**
+By: ___________________________
+Name: ___________________________
+Title: ___________________________
+Date: ___________________________
+
+---
+
+Please note that this is a simplified version of what such an agreement might look like and it's crucial for both parties to consult with legal counsel to ensure that all legal requirements are met and that the document is tailored to the specific circumstances of the arrangement.
+
+
+
+
+
+
+
+
+
+
+
+
+NDA template:
+
+NDA TEMPLATE
+This NDA outlines an agreement between a "Company" (the disclosing party) and a "Recipient" (the receiving party) to protect the confidentiality of a business plan and related information. It includes the following key sections:
+Article I: Recitals
+-This section provides background information about the purpose of the agreement. The Company wishes to share its business plan while maintaining confidentiality. Confidential Information is defined as all information, strategies, plans, trade secrets, objectives, and materials.
+
+Article II: Recipient Obligations
+- A. Non-Disclosure: The Recipient agrees not to use or disclose the Business Plan or Confidential Information for personal benefit or to any third party. The Recipient must take steps to protect this information from disclosure.
+- B. Disclosure: The Recipient can only disclose the Business Plan and Confidential Information to individuals within their organization on a need-to-know basis. All individuals privy to this information must also be bound by the terms of this Agreement.
+- C. Exceptions: The Recipient is not prohibited from disclosing information that is publicly known, was already in their possession before the agreement, is required by law, or has written approval from the Company.
+- D. Legal Obligation: If compelled by legal processes, the Recipient can disclose Confidential Information, provided they promptly notify the Company and take legally available steps to resist or narrow such requests.
+
+Article III: Term
+- This section allows the Parties to select whether the Recipient's obligations will remain in effect indefinitely or for a specified number of years (or in perpetuity) from the Effective Date.
+
+
+Article IV: Return or Destruction of Confidential Information
+- The Recipient must return or destroy all materials related to the Confidential Information upon termination of the Agreement or as per the Company's request.
+
+Article V: No Additional Agreements
+- This section clarifies that discussions and information exchange don't create any obligation for the Company to enter into further agreements with the Recipient or prohibit them from providing similar information to others.
+
+Article VI: Indemnify
+- The Recipient agrees to indemnify (compensate) the Company against any damages or losses resulting from a breach of the Agreement. Recipient understands and acknowledges that any use or disclosure regarding the Business Plan or Confidential Information could cause the Company irreparable harm, the amount of which may be difficult to ascertain, and therefore agrees that the Company shall have the right to apply to a court of competent jurisdiction for specific performance or order restraining and enjoining any such further disclosure or breach and for such other relief as Company deems appropriate, in addition to the remedies otherwise available at law or in equity.
+
+Article VII: Successors and Assigns
+- The obligations of this Agreement are binding on the representatives, assigns, and successors of the Parties. However, the Recipient's rights and obligations are not assignable.
+
+Article VIII: Governing Law
+- The Agreement is governed by the laws of a specified state.
+
+
+Article IX: Prevailing Party
+- In case of a dispute, the prevailing party has the right to collect attorney fees, costs, and other legal expenses from the other party.
+
+Article X: Entire Agreement
+- This Agreement supersedes all prior agreements and must be altered, amended, or modified in writing by both Parties.
+
+Article XI: Validity
+- If any provision is deemed unenforceable by a court, it will be interpreted to preserve its intent.
+
+Article XII: Notices
+- The section outlines how notices should be provided and includes spaces for the Parties' addresses.
+
+The Agreement ends with a signature section for both the Company and the Recipient, including signature, date, printed name, and title for each party.
+
+
+
+

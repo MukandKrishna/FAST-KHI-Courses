@@ -1,0 +1,53 @@
+Original Clauses for MK Private and SF:
+
+SF shall deliver UI and UX design services for rapid prototyping jobs as per the specifications provided by MK Private. The deliverables must meet the quality standards as agreed upon in the SLA.
+
+MK Private commits to providing a steady volume of projects to SF, not less than a specified number per quarter, to ensure a consistent workflow and revenue stream for SF.
+
+SF is responsible for the recruitment and retention of adequate personnel, including freelancers and early career starters, to fulfill the obligations of the SLA without compromising on the quality of the work.
+
+Amendments by SF:
+
+SF shall deliver UI and UX design services for rapid prototyping jobs as per the specifications provided by MK Private. The deliverables must meet the quality standards as agreed upon in the SLA, with the understanding that all feedback on deliverables must be provided within 14 days of submission feedback on deliverables must be provided within a mutually agreed upon timeframe to ensure timely revisions and quality assurance.
+
+MK Private commits to providing a steady volume of projects to SF, not less than a specified number per quarter, to ensure a consistent workflow and revenue stream for SF. In addition, MK Private shall offer competitive rates that reflect the market conditions and the complexity of the projects.
+
+SF is responsible for the recruitment and retention of adequate personnel, including freelancers and early career starters, to fulfill the obligations of the SLA without compromising on the quality of the work. SF will also implement a training and development program that is to be partially subsidized by MK Private to foster skill diversity and team scalability.
+
+Conflict of Interest Clause and Amendment:
+
+Original Clause by MK Private:
+
+MK Private reserves the right to seek alternative service providers if SF fails to meet the agreed quality standards for two consecutive project deliveries.
+Amendment by SF:
+
+MK Private reserves the right to seek alternative service providers if SF fails to meet the agreed quality standards for two consecutive project deliveries, provided that SF has been given a chance to rectify the issues in the deliverables and has failed to do so within a reasonable period of 30 days 45 days, acknowledging the time required for recruitment and training of specialized personnel.
+In practice, to indicate these amendments in a legal document, you would strike through the original text that has been amended and underline the new text that has been added. This follows the style seen in the Ensighten document, which facilitates clear identification of changes for both parties involved.
+
+
+
+
+
+Safeguarding SF's Interests:
+
+SF will maintain the right to adjust project timelines in response to the fluctuating availability of freelancers and early career starters, ensuring that quality is not compromised due to rushed work.
+SF requires MK Private to commit to a minimum quarterly volume of projects to ensure stable and predictable work for SF's team and freelancers.
+SF insists on a clause that allows for renegotiation of rates annually to account for inflation, changes in market rates, and the evolving complexity of projects.
+Safeguarding MK Private's Interests:
+
+MK Private demands a quality assurance clause that mandates penalties for deliverables that do not meet the agreed-upon UI/UX standards.
+MK Private requires that SF provide a dedicated account manager to address any concerns regarding the quality of work, especially UX design, in a timely manner.
+MK Private wants a clause that guarantees a rapid response from SF for any required revisions, aiming for resolution within a specific period following the submission of the complaint.
+Amendment Similar to the Ensighten Case:
+Original Clause by MK Private:
+
+MK Private, due to concerns about the fluctuating quality of deliverables, reserves the right to withhold payment for any project deliverables that do not meet the agreed standards until such time as the issues are resolved.
+Amended by SF:
+
+MK Private, due to concerns about the fluctuating quality of deliverables, reserves the right to withhold payment for any project deliverables that do not meet the agreed standards until such time as the issues are resolved provided that SF is given a reasonable opportunity, not to exceed 10 business days, to address and resolve any reported issues with the deliverables before any penalties are applied or payments are withheld.
+For the last part (C), we are asked to prepare a similar point for MK Private based on the Ensighten example:
+
+For MK Private:
+
+MK Private shall have the right to conduct quarterly performance reviews. Should SF fail to meet the performance metrics as stipulated in the SLA, MK Private reserves the right to demand a performance improvement plan or seek partial reimbursement for the projects affected during that quarter.
+The amendments involve strategic interests that protect both parties—SF's need for flexibility and fair compensation, and MK Private's need for quality assurance and accountability. The Ensighten-style amendment further clarifies the terms of resolving issues with deliverables, protecting both SF's opportunity to rectify issues and MK Private's right to quality work.

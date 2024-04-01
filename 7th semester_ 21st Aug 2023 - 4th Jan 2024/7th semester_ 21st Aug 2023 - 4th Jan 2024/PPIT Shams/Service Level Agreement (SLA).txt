@@ -1,0 +1,156 @@
+**Service Level Agreement (SLA) for Connectivity Services**
+
+**Document Overview:**
+This Service Level Agreement (SLA) is established between Sumgait RES LLC and Azerfon MMC and comes into effect on June 6, 2013. It outlines the framework and terms for providing Mobile GSM/GPRS connectivity services.
+
+**Ownership and Approvals:**
+The document is owned by Azerfon LLC. Approval is secured by signatures from both parties—Azerfon LLC as the Service Provider and RES Sumgayit LLC as the Customer, agreeing to all terms and conditions herein.
+
+**Agreement Partners:**
+- **Service Provider:** "Azerfon" LLC, represented by its CEO Mr. Kent McNeley.
+- **Customer:** "RES Sumgayit" LLC, represented by its Acting Director Mr. Saleh Mammadli.
+Each party is individually termed as “Party” and collectively as the “Parties”.
+
+**Purpose and Objectives:**
+The SLA aims to provide consistent Mobile GSM/GPRS service by:
+- Defining service ownership, accountability, and roles.
+- Providing a clear description of service delivery.
+- Aligning service expectations with performance.
+
+**Review Schedule:**
+- **Owner for Review:** Azerfon MMC.
+- **Review Frequency:** Every six months.
+- The agreement remains valid until the next review or service end date.
+
+**Service Description:**
+The Service Provider is responsible for:
+- Ensuring the automated management system for meter data works efficiently.
+- Providing continuous connectivity to all meters.
+- Addressing any service disruptions promptly.
+- Offering customer support via telephone, email, and remote assistance.
+- Conducting monthly system performance checks.
+
+**Customer and Service Provider Requirements:**
+- **Customer:** Must pay all support costs and provide access to their representatives.
+- **Service Provider:** Must meet incident response times and notify the Customer in advance of maintenance.
+
+**Service Availability:**
+- **Phone Support:** 24/7.
+- **Email Support:** 9:00 A.M. to 5:00 P.M, Monday to Friday.
+- **Emergency Support:** 24/7 on-call assistance.
+
+**Service Requests and Problem Tracking:**
+- A tracking number will be assigned to all customer support requests.
+- Service incidents will be categorized by severity, with response and restoration times defined for each level.
+
+**Performance Metrics:**
+- **CS Core Network Availability:** 99.69%
+- **PS Core Network Availability:** 99.79%
+- **SMSC System Availability:** 99.7%
+- **2G Radio Network Availability:** 97.52% in coverage areas.
+
+**Penalties for Service Failures:**
+Penalties may be applied for failure to meet response times, up to:
+- 3% of the monthly fee for Minor issues.
+- 5% of the monthly fee for Major issues.
+- 10% of the monthly fee for Critical issues.
+
+
+
+
+
+
+
+
+
+SLA template: 
+
+
+
+SLA
+Creating a Service Level Agreement (SLA) for the security services provided by ABC Security at FAST University's "Developer's Day" event:
+
+Service Level Agreement (SLA) for Security Services
+
+1. Service Provider:
+   - ABC Security
+   - [Company Address]
+   - [City, State, Zip Code]
+
+2. Service Recipient:
+   - FAST University
+   - [University Address]
+   - [City, State, Zip Code]
+
+3. Service Description:
+   ABC Security shall provide security services for the "Developer's Day" event, including access control, crowd management, perimeter security, asset protection, emergency response, and additional security services as needed for the safety of event attendees and assets.
+
+4. Duration of Service:
+   The security services will be provided for the entire duration of the "Developer's Day" event, starting from [Start Time] to [End Time] on [Event Date].
+
+5. Service Levels:
+
+   a. Response Time:
+      - ABC Security shall respond to security incidents within [Response Time] minutes of notification by FAST University.
+
+   b. Availability:
+      - ABC Security personnel shall be present on-site throughout the event.
+
+   c. Quality of Service:
+      - Security services provided by ABC Security shall meet or exceed industry standards for crowd management, access control, and asset protection.
+
+   d. Communication:
+      - ABC Security shall maintain clear and constant communication with FAST University's designated point of contact for coordination and updates during the event.
+
+6. Compensation:
+   - FAST University agrees to compensate ABC Security at the agreed rate of [Agreed Rate] per hour. Payment shall be made within [Payment Terms] of the completion of the event.
+
+7. Reporting:
+   - ABC Security shall provide daily incident reports to FAST University during the event and a final event report within [Report Submission Timeframe] days after the event's conclusion.
+
+8. Review and Modification:
+   - This SLA will be reviewed annually or as needed by both parties and may be modified by mutual agreement.
+
+9. Termination:
+   - Either party may terminate this SLA with written notice if the other party breaches any of its obligations herein.
+
+10. Confidentiality:
+    - Both parties agree to keep all information and details regarding this SLA and the security services provided confidential.
+
+11. Governing Law:
+    - This SLA shall be governed by and construed in accordance with the laws of [Jurisdiction].
+
+12. Entire Agreement:
+    - This SLA constitutes the entire agreement between ABC Security and FAST University regarding security services for the "Developer's Day" event and supersedes all previous agreements, whether written or oral.
+
+This SLA is executed on the date first above written.
+
+ABC Security:                                   FAST University:
+
+_______________________________                _______________________________
+[Your Signature]                               [Recipient's Signature]
+[Your Printed Name]                            [Recipient's Printed Name]
+[Date]                                         [Date]
+
+Please ensure that both parties understand and agree to the terms and conditions of this SLA before signin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

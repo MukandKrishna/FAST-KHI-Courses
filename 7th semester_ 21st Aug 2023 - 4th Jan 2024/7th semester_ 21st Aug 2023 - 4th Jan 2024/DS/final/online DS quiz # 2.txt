@@ -1,0 +1,140 @@
+online DS quiz:
+
+Which of the following evaluation metrics can be used to evaluate a model while modeling a continuous output variable?
+*
+1 point
+AUC-ROC
+Accuracy
+Logloss
+Mean-Squared-Error
+
+
+Suppose we have N independent variables (X1, X2… Xn) and Y’s dependent variable.
+Now Imagine that you are applying linear regression by fitting the best-fit line using the least square error on this data. You found that the correlation coefficient for one of its variables (Say X1) with Y is -0.95. Which of the following is true for X1?
+
+*
+1 point
+Relation between the X1 and Y is weak
+Relation between the X1 and Y is strong
+Relation between the X1 and Y is neutral
+Correlation can’t judge the relationship
+
+
+If the regression equation is equal to y=23.6−54.2x, then 23.6 is the _____ while -54.2 is the ____ of the regression line.
+*
+1 point
+Slope, intercept
+Slope, regression coefficient
+Intercept, slope
+Radius, intercept
+
+
+Which of the following is true about residuals?
+*
+1 point
+Lower is better
+Higher is better
+A or B depending on the situation
+None of these
+
+
+Which of the following methods do we use to find the best-fit line for data in Linear Regression?
+*
+1 point
+Least Square Error
+Maximum Likelihood
+Logarithmic Loss
+Both A and B
+
+
+Below you are given a summary of the output from a simple linear regression analysis from a sample of size 15, SSR=100, SST = 152. The coefficient of determination is;
+*
+2 points
+0.5200
+0.6579
+0.8111
+1.52
+
+
+A regression analysis between sales (in $1000) and price (in dollars) resulted in the following
+equation:
+y = 50,000 - 8X
+The above equation implies that an
+*
+1 point
+increase of $1 in price is associated with a decrease of $8 in sales
+increase of $8 in price is associated with an increase of $8,000 in sales
+increase of $1 in price is associated with a decrease of $42,000 in sales
+increase of $1 in price is associated with a decrease of $8000 in sales
+
+
+The correct relationship between SST, SSR, and SSE is given by;
+*
+1 point
+SSR = SST + SSE
+SST = SSR + SSE
+SSE = SSR – SST
+all of the above
+
+True-False: Lasso Regularization can be used for variable selection in Linear Regression.
+*
+1 point
+TRUE
+FALSE
+
+
+True-False: Linear Regression is a supervised machine learning algorithm.
+*
+1 point
+TRUE
+FALSE
+
+Assume you want to cluster 7 observations into 3 clusters using the K-Means clustering algorithm. After first iteration, clusters C1, C2, C3 have following observations:
+C1: {(2,2), (4,4), (6,6)}
+C2: {(0,4), (4,0)}
+C3: {(5,5), (9,9)}
+What will be the Manhattan distance for observation (9, 9) from cluster centroid C1 in the second iteration?
+
+In a plane with p1 at (x1, y1) and p2 at (x2, y2), Manhattan distance is |x1 - x2| + |y1 - y2|.
+
+10
+5*sqrt(2)
+13*sqrt(2)
+None of these
+
+What is the minimum no. of variables/ features required to perform clustering?
+
+0
+1
+2
+3
+
+Assume you want to cluster 7 observations into 3 clusters using the K-Means clustering algorithm. After the first iteration, clusters C1, C2, C3 have following observations:
+C1: {(2,2), (4,4), (6,6)}
+C2: {(0,4), (4,0)}
+C3: {(5,5), (9,9)}
+
+
+What will be the cluster centroids if you want to proceed with the second iteration?
+
+C1: (4,4), C2: (2,2), C3: (7,7)
+C1: (6,6), C2: (4,4), C3: (9,9)
+C1: (2,2), C2: (0,0), C3: (5,5)
+None of these
+
+
+
+Is it possible that the assignment of observations to clusters does not change between successive iterations in K-Means?
+
+Yes
+No
+Can’t say
+None of these
+
+Feature scaling is an important step before applying the K-Mean algorithm. What is the reason behind this?
+
+In distance calculation, it will give the same weights for all features
+You always get the same clusters. If you use or don’t use feature scaling
+In Manhattan distance, it is an important step, but in Euclidean distance, it is not
+None of these
+
