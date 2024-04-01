@@ -1,0 +1,686 @@
+<HTML>
+<HEAD>
+   <TITLE>Operator Overloading and "This"</TITLE>
+   <LINK REL=STYLESHEET HREF=/Style/lab.css TYPE="TEXT/CSS">
+</HEAD>
+<BODY>
+
+<!--Title -->
+<CENTER> <H1> CS210 Lab: Operator Overloading and "This"</H1></CENTER>
+
+<!-- Preview Section -->
+<HR>
+<H2> Prelab Questions: </H2>
+For a review of relevant topics click   
+  	<a href="prelab.html">here</a>.
+
+<H2> Highlights of This Lab: </H2>
+<UL>
+
+<LI> <A HREF="#DEFINITION">Definition of Operator Overloading </LI>
+
+<LI> <A HREF="#FRIEND">Operator Overloading Using a Friend</A> </LI>
+
+<LI> <A HREF="#OVERLOADING">Member Operator Overloading</A> </LI>
+
+<LI> <A HREF="#THIS">The "this" Pointer</A> </LI>
+ 
+
+</UL>
+<H2> Lab Exercise:  
+<a href="#EXERCISE"><img SRC="/Style/gifs/computer.gif" 
+BORDER=0 height=45 width=64 align=CENTER></a>
+</h2>
+
+<br><b><i>Click the little computer above for a detailed description.</i></b>
+<!--
+<br>For this exercise you will be asked overload the subtraction operator in
+two different ways, and overload the the << (insertion) operator.
+-->
+
+
+<HR>
+<!-- Section 1 Definition of Operator Overloading -->
+<A NAME=DEFINITION></A>
+<H2> 1. Definition of Operator Overloading </H2>
+Operator Overloading allows you to redefine the functioning of certain
+operators, such as "+", "-", "=", ">>", "<<" 
+(a complete chart is below).
+
+<p>
+The question is: why would you want to do this?  
+<br>
+Because, sometimes it is more intuitive to simply be able to write the short
+ form of an operation.  
+For instance consider this example of adding two arrays. 
+
+<pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+#define MAXARRAY 5
+
+int main ()
+{
+
+	int array1[MAXARRAY], array2[MAXARRAY], array3[MAXARRAY];
+	int i=0;
+	<font color=green>
+	//INITIALIZE </font>
+	for (i=0; i&lt;MAXARRAY; i++)
+	{
+		array1[i]=i;
+		array2[i]=i+3;
+	}
+	<font color=green>
+	//ADD </font>
+	for (i=0; i&lt;MAXARRAY; i++)
+		array3[i]=array1[i] + array2[i];
+	<font color=green>
+	//PRINT </font>
+	cout << "array1   array2   array3" << endl;
+	for (i=0; i&lt;MAXARRAY; i++)
+		cout << array1[i] << "        " 
+		     << array2[i] << "        " 
+		     << array3[i] << endl;
+
+	return 0;
+}
+</pre>
+
+Instead of writing a <var>for</var> statement every time you add two arrays
+ together, it would be nice to instead write:
+<pre>
+array3=array1 + array2;
+</pre>
+<!--
+If you try, you get an error "cannot add two pointers"
+-->
+To be able to do this, you must <b> overload </b> the "+" operator.
+To overload any operator, you use the keyword  <var>operator</var>
+and then the operator character. 
+<UL>
+ <LI>For instance, to overload the "+",
+	you define a function called <var>operator+</var>.  
+ <LI>Similarly, to overload the "&lt;", 
+	you define a function called <var>operator&lt;</var>. 
+</UL>
+We will discuss the details in Section 2. 
+
+<!--
+Cannot write: 
+int * operator+(const int *array1, const int *array2)
+{
+	int temparray[MAXARRAY];
+	for (int i=0; i<MAXARRAY; i++)
+		temparray[i]=array1[i] + array2[i];
+
+	return temparray;
+}
+ //<<
+
+Because must have at least one parameter of class or enumeration type
+-->
+
+<p>
+The following table (taken from <i>C++ Primer</i>, Lippman and Lajoie) is the predefined set of C++ operators that may be overloaded:
+<p>
+<font size=+1> <b> Table of Overloadable Operators </b></font>
+<table border=3>
+	<tr>
+		<td width=11%> + </td>   
+		<td width=11%> - </td> 
+		<td width=11%> * </td> 
+		<td width=11%> / </td>
+		<td width=11%> % </td>
+		<td width=11%> ^ </td>
+		<td width=11%> & </td>
+		<td width=11%> | </td>
+		<td width=11%> ~ </td>
+	</tr>
+	<tr>
+		<td> ! </td>  
+		<td> , </td> 
+		<td> = </td>
+		<td> < </td>
+		<td> > </td>
+		<td> <= </td>
+		<td> >= </td>
+		<td> ++ </td>
+		<td> -- </td>
+	</tr>
+	<tr>
+		<td> << </td>
+		<td> >> </td>
+		<td> == </td>
+		<td> != </td>
+		<td> && </td>
+		<td> || </td>
+		<td> += </td>
+		<td> -= </td>
+		<td> /= </td>
+	</tr>
+	<tr>
+		<td> %= </td>
+		<td> ^= </td>
+		<td> &= </td>
+		<td> |= </td>
+		<td> *= </td>
+		<td> <<= </td>
+		<td> >>= </td>
+		<td> [] </td>
+		<td> () </td>
+	</tr>
+	<tr>
+		<td> -> </td>
+		<td> ->* </td>
+		<td> new </td>
+		<td> new[] </td>
+		<td> delete </td>
+		<td> delete[] </td>
+		<td> &nbsp; </td>
+		<td> &nbsp; </td>
+		<td> &nbsp; </td>
+	</tr>
+</table>
+<b>
+<p>
+NOTE: the point of operator overloading is to be intuitive. 
+You do not want to assign a confusing operator name.
+For instance, you do not want to overload the "+"
+ when the function actually performs subtraction. 
+</b>
+
+<HR>
+<!-- Section 2 Operator Overloading Using a Friend -->
+<A NAME=FRIEND></A>
+<H2> 2. Operator Overloading Using a Friend </H2>
+Given the code above, we want to overload the addition operator to 
+write:
+<pre>
+array3=array1 + array2;
+</pre>
+This involves some manipulation on the code in Section 1.  
+<ul type=circle>
+ <li> First, we cannot overload operators for built-in data types. 
+For example, 
+ as in the above case, we cannot overload the "+" for two 
+ operands of array types.
+ <li> Therefore, we have to define a class with an array and some member
+	functions.  Then we can overload the "+" using the objects of
+	this class as operands.
+</ul>
+<p>
+Let's show the code for the myarray class and the overloaded "+":
+<pre>
+class myarray
+{
+private:
+	int value[MAXARRAY];
+
+public:
+	void setvalue(int index, int newvalue){
+		value[index]=newvalue;}
+	int getvalue(int index){
+		return value[index];}
+	<font color=red>friend </font>myarray operator+(myarray array1, myarray array2); 
+};
+myarray operator+(<font color=red>myarray array1, myarray array2</font>)
+{
+	myarray temparray;
+	for (int i=0; i&lt;MAXARRAY; i++)
+		temparray.value[i]=array1.value[i] + array2.value[i];
+	return temparray;
+}
+int main ()
+{
+
+	myarray array1, array2, array3;
+	<font color=green>
+	//INITIALIZE </font>
+	for (int i=0; i&lt;MAXARRAY; i++)
+	{
+		array1.setvalue(i,i);
+		array2.setvalue(i,i+3);
+	}
+	<font color=green>
+	//ADD </font>
+	<font color=red>array3=array1 + array2; </font>
+	<font color=green>
+	//PRINT </font>
+	cout << "array1   array2   array3" << endl;
+	for (i=0; i&lt;MAXARRAY; i++)
+		cout << array1.getvalue(i) << "        " 
+		     << array2.getvalue(i) << "        " 
+		     << array3.getvalue(i) << endl;
+
+	return 0;
+}
+</pre>
+Notice the following:
+<UL>
+	<LI>We have defined member functions: 
+	   <var>getvalue</var> and <var>setvalue</var>, 
+ 		and one data member <var>value</var> (an array of 5 integers).
+	<LI>We have overloaded the + operator.  Remember that this is 
+		a binary operator (it needs two arguments).  Therefore,
+		what is on the left-hand side of the "+" is the first
+		argument and what is on the right-hand side of the 
+		"+" is the second argument in the <var>operator+</var> function.
+	<br>
+	Here, we can view the code:
+<pre>
+array3=array1 + arrray2;
+</pre>
+	as being rewritten by the compiler as:
+<pre>
+array3=operator+(array1, array2);
+</pre>
+</UL>
+<p>
+&nbsp;
+<H3>2.1 A Noteworthy "friend"</H3>
+Pay attention to the body of the <var>operator+</var> function.
+We are trying to access the <var>value</var> array, which is a private
+data member.  Normally, this would yield a compiler error. We 
+have two options:
+<OL>
+	<LI>make <var>value</var> a <var>public</var> data member so that
+	     anything can access it. <b>This is NOT a good option</b> because it
+	     goes against the principles of object oriented programming.
+		Anything could then modify the <var>value</var> array.
+	<LI>make the <var>operator+</var> function a <var>friend</var> to
+	     myarray.  <b>This is a better option</b>.  When we specify that
+	     the <var>operator+</var> function is a "friend", we trust it
+	     enough to give it access to the private data members in myarrray.
+	     Therefore, in the body of the <var>operator+</var> function we
+		can access the <var>value</var> array.
+</OL> 
+
+<HR>
+<!-- Section 3 Member Operator Overloading -->
+<A NAME=OVERLOADING></A>
+<H2> 3. Member Operator Overloading </H2>
+Another way that we can overload an operator is as a member function.
+<p>
+The code would look like the following:
+<pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+#define MAXARRAY 5
+class myarray 
+{
+private:
+	int value[MAXARRAY];
+
+public:
+	void setvalue(int index, int newvalue){
+		value[index]=newvalue;}
+	int getvalue(int index){
+		return value[index];}
+	myarray operator+(<font color=red>myarray array2</font>)
+	{
+		myarray temparray;
+		for (int i=0; i&lt;MAXARRAY; i++)
+			temparray.value[i]=value[i] + array2.value[i];
+		return temparray;
+	}
+};
+</font>
+int main ()
+{
+   . . .
+}
+</pre>
+Note:
+<UL>
+	<LI>There is only one argument instead of two.
+</UL>
+How can that be?
+<p>
+You can view the following code:
+<pre>
+array3=array1 + array2;
+</pre>
+as being rewritten by the compiler as:
+<pre>
+array3=array1.operator+(array2);
+</pre>
+This is because <var>array1</var> is an object of <var>myarray</var> class,
+and <var>operator+</var> is a member function. It is the same idea as 
+calling another member function such as: <var>array1.getvalue(0);</var>.
+<p>
+In the overloaded operator case however, 
+ the compiler is smart enough to figure out that
+when you write <var>array1 + array2</var>, what you actually mean is
+ <var>array1.operator+(array2)</var>.
+<p>
+This is where <var>this</var> pointer comes in handy.
+<HR>
+<!-- Section 4 This Pointer -->
+<A NAME=THIS></A>
+<H2> 4. The "this" Pointer </H2>
+For an introduction to the "this" Pointer, click
+<A HREF="this.html">here</A>
+<p>
+Whenever a member function is called, an implicit 
+ argument, specifically, a pointer to the object that generated the call, is
+ automatically passed to the function.  
+ This pointer is called <b>this</b>.
+
+<!--
+In future would like to add page 320 from C++ Complete Reference and
+page 637 from C++ Primer
+-->
+
+<HR>
+<H3>How do you know when to use what? </H3>
+To summarize, sometimes you have a choice of defining the overloaded operator
+function as a member function or a non-member function.  
+It is a matter of preference as to which you find more comfortable and easy.
+However, there are two situations where
+you are forced to use only one of the two options:
+<OL>
+<LI>
+When the left-hand side is not an object
+(for instance, when the left-hand side is a integer) such as: 
+<UL>
+	<LI>1+a
+</UL>
+you must define it as a <b>non-member function</b> 
+<p>
+<LI> 
+For the following operators, you can only define them as <b>member functions</b>
+	<UL>
+	   <LI> Assignment =
+	   <LI> Class member access ->	
+	   <LI> Subscripting []
+	   <LI> Function call ()
+	</UL>
+You will get a compiler error if you try and overload these operators as 
+ non-member functions.
+</OL>
+<a href="membervsregular.html">What is the difference between member and 
+non-member functions?</a>
+<HR>
+
+<!--section 5 Exercise -->
+<A NAME = EXERCISE></A>
+<H2> 5. Lab Exercise </H2>
+
+<p>There are two parts to the exercise.  The first part is a pen and paper
+component where you make a table to show your understanding of overloading
+operators in the two ways discussed above&mdash;as member functions and as
+ non-member functions.  The second part is programming. <b>Zip part1 and part 2 together and sumbit it before the due date.</b></p>
+
+<H3>Part 1</H3>
+Complete the following tables: write out the answer on a piece of paper, take a photo or scan it as a pdf document.
+<p>
+Assume that a and b are myarray objects.
+Specify the corresponding member and non-member prototypes for the
+following overloaded operator expressions. If you cannot define the 
+prototypes in one of these ways, please specify with an N/A. 
+The first two have been completed for you.
+<p>
+<table border=3>
+	<th>Expression
+	<th>&nbsp;Defined as Member Functions&nbsp; 
+	<th>Defined as Non-Member Functions 
+	<tr>
+		<td>&nbsp;a+b
+		<td>&nbsp;myarray operator+(myarray b)&nbsp;
+		<td>&nbsp;myarray operator+(myarray a, myarray b)&nbsp;
+	</tr>
+	<tr>
+		<td>&nbsp;1+a
+		<td>&nbsp;N/A
+		<td>&nbsp;myarray operator+(int a, myarray b)
+	</tr>
+	<tr>
+		<td>&nbsp;a+1
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>&nbsp;a=b
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>&nbsp;a&gt;b
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>&nbsp;10&lt;b
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>&nbsp;cin&gt;&gt;a
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+
+</table>
+
+<p>
+Specify which of the following are Member Functions and which
+ are Non-Member Functions:
+</p>
+<table border=3>
+	<th> &nbsp;
+	</th>
+	<th>Member
+	</th>
+	<th>Non-Member
+	</th>
+	<tr>
+		<td>max(a,b)
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>a.printit()
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>int myclass::sum(void)
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+	<tr>
+		<td>float min(float a, float b)
+		<td>&nbsp;
+		<td>&nbsp;
+	</tr>
+</table>
+
+<H3>Part 2</H3>
+<ul>
+<li>Copy this file to your computer.
+<pre>
+<!--
+The location:	<A Href="ftp://ftp.cs.uregina.ca/pub/class/210/ftp/Overloading"
+    target="_blank">ftp://ftp.cs.uregina.ca/pub/class/210/ftp/Overloading/</a>
+-->
+The file: 	<a href="/Links/class-info/210/ftp/Overloading/arrayadder.cpp">arrayadder.cpp</a>
+
+</pre>
+
+<p>
+<p>
+<!-----
+<font size = "+1">
+---->
+Your primary tasks for this exercise are:
+<ol>
+<li> Modify the code so that you overload the "-" operator to 
+     subtract array2 from array1:
+	<UL>
+		<li> First overload it as a member function in the
+			 <var>myarray</var> class. </li>
+		<li> Second overload it as a non-member function </li> 
+	</UL>
+<li> Overload the "<<" (insertion operator) so that it will print the entire array on
+	one line
+</ol>
+<p>
+Steps include:
+</font>
+
+<li>
+Build and run the executable file 
+(this is just to ensure that the program is working).
+You should get the following output:
+<pre>
+array1   array2   array3
+0        3        3
+1        4        5
+2        5        7
+3        6        9
+4        7        11
+</pre>
+<p>
+<li>
+Add some code in the <var>myarray</var> class to overload the "-" operator
+<p>
+<li>
+Add some code in main (after the following line)
+<pre>
+	array3=array1 + array2; 
+</pre>
+to subtract array2 from array1 (and store the result in array3).
+<p>
+<li>
+Build and run the executable file. 
+You should get the following output:
+<pre>
+array1   array2   array3
+0        3        -3
+1        4        -3
+2        5        -3
+3        6        -3
+4        7        -3
+</pre>
+<p>
+<li>
+Overload the "-" operator as an non-member function.
+(Making appropriate changes--as in <a href="#FRIEND">this section</a>)
+<p>
+<li>
+Build and run the executable file.  You should get the same output as the
+ previous run.
+<p>
+<li>
+Now, overload the "<<" (insertion operator) so that it will print one array per line.
+<br>
+Hints: The prototype will look like this:
+<pre>
+ostream& operator<<(ostream& os, myarray array)
+</pre>
+You make use of <var>os</var> in lines like the following:
+<pre>
+os << "newarray:  ";
+</pre>
+(this puts "newarray: " into the output stream, <var>os</var>)
+<br>
+Don't forget to:
+<pre>
+	return os;
+</pre> 
+<p>
+<li>
+Change the calls to <var>cout</var> in main so that you only have a single
+line:
+<pre>
+cout << array1 << array2 << array3;
+</pre>
+<p>
+<li>
+Build and run the executable file. You should get output similar to 
+the following:
+<pre>
+newarray:  0      1     2     3    4
+newarray:  3      4     5     6    7
+newarray:  -3    -3    -3    -3    -3
+</pre>
+
+</ul>
+<br>
+<!--
+<H4>Part 3 </h4>
+
+<ul>
+<li>Copy this file to your computer.
+<pre>
+The location:	<A Href="ftp://ftp.cs.uregina.ca/pub/class/210/ftp/Overloading"
+    target="_blank">ftp://ftp.cs.uregina.ca/pub/class/210/ftp/Overloading/</a>
+
+The file: 	<a href="/Links/class-info/210/ftp/Overloading/arrayadder2.cpp">arrayadder2.cpp</a>
+
+</pre>
+<p>
+This exercise is meant to review the concept of shallow versus deep copy.For a review on this
+   concept, 
+   click <a href="http://www.cs.fsu.edu/~gaitrosd/classes/cop3330/Slides/CopyConstructor.ppt">here</a>
+
+<p>Your primary tasks for this exercise are:
+<ol>
+<li> Modify the code so that you are doing a deep copy rather than a shallow 
+      copy.  
+<li> See how this affects the printing of array3 and array4.
+</ol>
+<p>
+Steps include:
+</font>
+<li>Build and run the executable file (this is just to ensure that the 
+    program is working).  You should get the following output:
+	<pre>
+array1   array2   array3    array4
+0        3        0        0
+1        4        5        5
+2        5        7        7
+3        6        9        9
+4        7        11        11
+	</pre>
+<li>Modify the code so that you are doing a deep copy.  What is the change
+    in your output?
+</ul>
+-->
+<hr>
+<!--section 6 Post Lab-->
+<A NAME = POSTLAB> </A>
+<H2> 6. Postlab Exercises </H2>
+ For postlab exercices, click <a href="postlab.html">here</a>.
+<!--section 7 Ending -->
+<hr>
+<p>
+<center>
+
+<p>
+<table border=3 width="70%">
+<tr bgcolor="CCCCCC">
+<td> <center>
+  <a href="/">CS Dept Home Page</a>
+        </center></td>
+<td> <center>
+  <a href="/ClassesLabs/class.html">
+        CS Dept Class Files</a> </center></td>
+<td> <center>
+  <a href="/Links/class-info/210/">
+        CS210 Class Files</a>  </center></td>
+</tr>
+</table>
+
+</center>
+ <BR><IMG SRC="/Style/gifs/copybtn.gif" HEIGHT="30" WIDTH="30" BORDER="0" ALIGN="CENTER">
+    <B><I>
+    Copyright: Department of Computer Science, University of Regina.
+    </I></B>
+
+</BODY>
+</HTML>
+

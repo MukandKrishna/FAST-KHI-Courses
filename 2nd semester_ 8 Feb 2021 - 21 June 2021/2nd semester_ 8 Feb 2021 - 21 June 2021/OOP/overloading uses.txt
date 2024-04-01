@@ -1,0 +1,10 @@
+Advantages of function Overloading in C++
+1. It is used to save memory space, consistency, and readability of our program.
+
+2. We can develop more than one function with the same name.
+
+3. It shows the behavior of polymorphism that allows us to get different behavior, although there will be some link using the same name of the function.
+
+4. It speeds up the execution of the program and Code maintenance becomes easy.
+
+5. It helps application to load the class method based on the type of parameter. 

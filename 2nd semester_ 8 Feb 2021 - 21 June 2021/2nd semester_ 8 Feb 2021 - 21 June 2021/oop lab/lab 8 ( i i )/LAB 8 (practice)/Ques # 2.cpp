@@ -1,0 +1,189 @@
+						///  overloading the  ' + '  opetator 
+
+
+/*
+#include <iostream>
+using namespace std;
+#define MAXARRAY 5
+
+class myarray
+{
+private:
+	int value[MAXARRAY];
+public:
+	void setvalue(int index, int newvalue)
+	{
+		value[index]=newvalue;
+	}
+	
+	int getvalue(int index)
+	{
+		return value[index];
+	}
+	
+	myarray operator-(myarray array2)
+	{
+		myarray temparray;
+	
+		for (int i=0; i<MAXARRAY; i++)
+		{
+			temparray.value[i]=value[i] - array2.value[i];
+		}		
+		return temparray;
+	}
+};
+
+int main ()
+{
+	myarray array1, array2, array3;
+	int i;
+	
+	for (i=0; i<MAXARRAY; i++)
+	{
+		array1.setvalue(i,i);
+		array2.setvalue(i,i+3);
+	}
+	
+	array3=array1 - array2; 
+	
+	cout << "array1   array2   array3" << endl;
+	for (i=0; i<MAXARRAY; i++)
+
+		cout << array1.getvalue(i) << "        " 
+		     << array2.getvalue(i) << "        " 
+		     << array3.getvalue(i) << endl;
+
+	return 0;
+}
+
+
+								///  overloading the  ' - '  opetator vertically each array
+
+
+#include <iostream>
+using namespace std;
+#define MAXARRAY 5
+
+class myarray
+{
+private:
+	int value[MAXARRAY];
+public:
+	void setvalue(int index, int newvalue)
+	{
+		value[index]=newvalue;
+	}
+	
+	int getvalue(int index)
+	{
+		return value[index];
+	}
+	
+	myarray operator-(myarray array2)
+	{
+		myarray temparray;
+	
+		for (int i=0; i<MAXARRAY; i++)
+		{
+			temparray.value[i]=value[i] - array2.value[i];
+		}		
+		return temparray;
+	}
+};
+
+int main ()
+{
+	myarray array1, array2, array3;
+	int i;
+	
+	for (i=0; i<MAXARRAY; i++)
+	{
+		array1.setvalue(i,i);
+		array2.setvalue(i,i+3);
+	}
+	
+	array3=array1 - array2; 
+	
+	cout << "array1   array2   array3" << endl;
+	for (i=0; i<MAXARRAY; i++)
+
+		cout << array1.getvalue(i) << "        " 
+		     << array2.getvalue(i) << "        " 
+		     << array3.getvalue(i) << endl;
+
+	return 0;
+}
+*/
+
+
+							/////Printing the array in single line  /////
+     
+
+#include <iostream>
+using namespace std;
+#define MAXARRAY 5
+
+class myarray
+{
+private:
+	int value[MAXARRAY];
+public:
+	void setvalue(int index, int newvalue)
+	{
+		value[index]=newvalue;
+	}
+	
+	int getvalue(int index)
+	{
+		return value[index];
+	}
+	
+	myarray operator - (myarray array2)
+	{
+		myarray temparray;
+	
+		for (int i=0; i<MAXARRAY; i++)
+		{
+			temparray.value[i]=value[i] - array2.value[i];
+		}		
+		return temparray;
+	}
+};
+
+int main ()
+{
+	myarray array1, array2, array3;
+	int i;
+	
+	for (i=0; i<MAXARRAY; i++)
+	{
+		array1.setvalue(i,i);
+		array2.setvalue(i,i+3);
+	}
+	
+	array3=array1 - array2; 
+	
+	cout << "newarray: ";
+	for (i=0; i<MAXARRAY; i++)
+	{
+		cout << "  "<<array1.getvalue(i);
+	}
+	
+	cout << endl<<endl;
+	cout << "newarray: ";
+	for (i=0; i<MAXARRAY; i++)
+	{
+		cout << "  "<<array2.getvalue(i);
+	}
+	
+	cout << endl<<endl;
+	cout << "newarray: ";
+	for (i=0; i<MAXARRAY; i++)
+	{
+		cout <<"  "<<array3.getvalue(i);
+	}
+
+	return 0;
+}
+
+

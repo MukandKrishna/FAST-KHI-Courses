@@ -1,0 +1,61 @@
+************************Cryptography***************************
+
+Is technique of securing information and communications through 
+use of codes so that only those person for whom the information 
+is intended can understand it and process it.
+
+In Cryptography the techniques which are use to protect information are 
+obtained from mathematical concepts and a set of rule based calculations 
+known as algorithms to convert messages in ways that make it hard to decode it.
+
+------------------------------------------------------------------------------------------------------
+
+**************ENCRYPTION AND  DECRYPTION*************
+The process where an ordinary plain text is converted to cipher text
+and intended receiver of the text can only decode it and hence this process is known as encryption. 
+The process of conversion of cipher text to plain text this is known as decryption.
+
+-----------------------------------------------------------------------------------------------------
+
+****************Features *********************
+1.  Authentification
+
+The identities of sender and receiver As well as 
+destination of information is confirmed.
+
+2. Confidentiality
+
+Information can only be accessed by the person for whom
+it is intended and no other person can access it.
+
+3. Integrity:
+
+Information cannot be modified in storage or transition between
+sender and intended receiver.
+
+4. Non-repudiation:
+
+The sender of information cannot deny person's intention 
+to send information at later stage.
+
+--------------------------------------------------------------------------------------------------------
+
+********************Types *********************
+
+1. -----------------Symmetric Key Cryptography:-------------------
+
+It is an encryption system where the sender and receiver of message
+use single common key to encrypt and decrypt messages
+The most popular symmetric key cryptography system is Data Encryption System(DES).
+
+2. ---------------------Hash functions------------------------
+
+Functions that can be used to map data of arbitrary size to fixed-size values.
+The values returned by a hash function are called hash values or hash codes
+
+3 ---------------------Asymmetric Key Cryptography:----------------------
+
+Under this system a pair of keys is used to encrypt and decrypt information.
+A Public key is used for encryption and a Secret key is used for decryption.
+
+------------------------------------------------------------------------------------------------------

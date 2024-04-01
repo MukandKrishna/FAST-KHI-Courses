@@ -1,0 +1,3 @@
+name:              Mukand
+roll no:            20k-0409
+department:     BSCS
