@@ -1,0 +1,6 @@
+
+Name: mukand 
+Marks=50 
+
+Name: ali 
+Marks=50 

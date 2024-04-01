@@ -1,0 +1,64 @@
+
+1.
+
+  // putch() is used to display output character on screen.
+//  Putch() displays any alphanumeric characters to the standard output device.
+// It displays only one character at a time
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+2. 
+
+the rewind function sets the file position to the beginning of the file for the stream pointed to by stream. 
+It also clears the error and end-of-file indicators for stream.
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+3.
+
+goto 
+
+The goto statement allows us to transfer control of the program to the specified label
+
+use of goto statement may lead to code that is buggy and hard to follow. 
+
+can be useful sometimes. For example: to break from nested loops.
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+4. 
+
+gotoxy
+
+used to move the cursor on screen. declared in the "conio. h" header file.
+
+it takes 2 parameters 1st specifies x-co-ordinate i.e, horizontal position
+2nd specifies y-co-ordinate vertical position
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+5.
+
+ COORD is the structure and data type
+
+
+SetConsoleCursorPosition
+
+handle and COORD are the data types
+
+#include<windows.h> is the header file in which it is defined
+
+GetStdHandle is the predefined function returns handle which will pass as the 1st argument 
+GetStdHandle will tell which type of handle 
+ jo output screen ko handle krta h , SetConsoleCursorPosition us ko return krey ga
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+6. 
+return 1
+
+ return 1 means, it will return integer value 1 to the source function/program

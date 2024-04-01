@@ -1,0 +1,22 @@
+
+23
+
+use  Fflush (stdin); 
+
+if gets is not used
+
+
+variable of store  for writing in binary using fwrite()
+us variable ka sum
+variable ek h so     1 aye ga    as third argument 
+pointer ka name
+
+
+if x[5]  then 5 is written as 3rd argument
+
+
+3rd ka mean 
+abhi num1 ki ek value h ,one gia then one then one and so on 
+as the loop continues
+
+

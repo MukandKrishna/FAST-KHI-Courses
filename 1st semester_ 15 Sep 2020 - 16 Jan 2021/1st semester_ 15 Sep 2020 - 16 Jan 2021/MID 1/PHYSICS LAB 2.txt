@@ -1,0 +1,26 @@
+   LAB_2 
+import numpy as np
+v = np.array([23,13])
+print(v)
+ answer : [23,15]
+
+
+v_x= v[0} ; v_y = v[1]
+print('x-component of v is ' , v_x)
+print('y-component of v is ' , v_y)
+answer : x-component of v is  23
+         y-component of v is  15
+
+a= np.randam.rand(5)
+print(a)
+answer: [0.1911052  0.96638931 0.1247173  0.82617449 0.60896515]
+
+a= np.array(a)
+print(a)
+a
+answer: [0.10316467 0.79767695 0.48155772 0.42997512]
+array([0.10316467, 0.79767695, 0.48155772, 0.42997512])
+
+
+
+
